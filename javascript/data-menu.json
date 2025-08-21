@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Fresh Garden Salad",
+    "img": "https://i.pinimg.com/1200x/3c/a2/3d/3ca23d4f4aa1456ee49b998278711b3d.jpg",
+    "desc": "Campuran sayur segar seperti selada, tomat, timun, dan wortel dengan dressing lemon oil.",
+    "price": 3.5
+  },
+  {
+    "name": "Caesar Salad",
+    "img": "https://i.pinimg.com/1200x/00/38/9d/00389ddab812fdc051465e0d21b83ee8.jpg",
+    "desc": "Romaine lettuce, croutons, parmesan cheese dengan saus caesar creamy.",
+    "price": 4.0
+  },
+  {
+    "name": "Fruit Salad",
+    "img": "https://i.pinimg.com/1200x/c0/2d/59/c02d5949b1b2eb0f6fe97713173410f3.jpg",
+    "desc": "Campuran buah segar: apel, anggur, melon, dan stroberi dengan yogurt dressing.",
+    "price": 3.0
+  },
+  {
+    "name": "Greek Salad",
+    "img": "https://i.pinimg.com/1200x/8b/d8/db/8bd8db5372ec82fcc1bba787ed4d33f6.jpg",
+    "desc": "Tomat ceri, mentimun, paprika, bawang merah, keju feta, dan zaitun hitam segar.",
+    "price": 4.2
+  },
+  {
+    "name": "Quinoa Salad",
+    "img": "https://i.pinimg.com/1200x/f7/12/99/f712998fa71e0cef732059bc4e287803.jpg",
+    "desc": "Quinoa, alpukat, jagung manis, tomat, dan kacang hitam dengan dressing lime honey.",
+    "price": 5.0
+  },
+  {
+    "name": "Avocado Chicken Salad",
+    "img": "https://i.pinimg.com/1200x/0f/5d/49/0f5d49e0efa7c07f61df209dc37fedb3.jpg",
+    "desc": "Potongan ayam panggang, alpukat, selada, dan tomat dengan saus ranch ringan.",
+    "price": 5.5
+  }
+]

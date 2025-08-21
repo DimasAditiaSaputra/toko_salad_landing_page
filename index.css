@@ -1,0 +1,24 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-bg-color: #ffffff;
+  --primary-font-color: #1d352d;
+  --secondry-bg-color: #1a926a;
+  --third-bg-color: #f1f8f1;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* .container {
+  height: 10000px;
+} */

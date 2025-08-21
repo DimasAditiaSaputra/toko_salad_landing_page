@@ -1,0 +1,126 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.menu h1 {
+  font-weight: 400;
+  color: var(--primary-font-color);
+}
+
+.menu .container-menu {
+  width: 80%;
+  height: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.menu .container-menu .card-menu {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  gap: 15px;
+}
+
+.menu .container-menu .card-menu img {
+  width: 50%;
+  height: 70%;
+  border-radius: 0px 20px 0px 20px;
+  border: 3px solid var(--secondry-bg-color);
+  box-shadow: 8px 11px 0px -3px rgba(26, 146, 106, 1);
+  -webkit-box-shadow: 8px 11px 0px -3px rgba(26, 146, 106, 1);
+  -moz-box-shadow: 8px 11px 0px -3px rgba(26, 146, 106, 1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu .container-menu .card-menu img:hover {
+  transform: translateY(-20px);
+}
+
+.menu .container-menu .card-menu .container-text h2 {
+  font-weight: 500;
+}
+
+.menu .container-menu .card-menu .container-text p {
+  font-size: 0.7rem;
+}
+
+.menu .container-menu .card-menu .container-text .container-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .container-menu .card-menu .container-text .container-btn .order-item {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-font-color);
+  font-size: 0.9rem;
+}
+
+.menu
+  .container-menu
+  .card-menu
+  .container-text
+  .container-btn
+  .order-item:hover {
+  background-color: var(--secondry-bg-color);
+}
+
+.menu .container-menu .card-menu .container-text .container-btn .price {
+  border-radius: 0px;
+  width: 50px;
+  background-color: var(--secondry-bg-color);
+  color: var(--primary-bg-color);
+  font-size: 0.9rem;
+}
+
+/* loading */
+.loading {
+  border: 5px solid #f3f3f3; /* background abu */
+  border-top: 5px solid var(--secondry-bg-color); /* warna utama */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+  display: none; /* default sembunyi */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu .container-menu {
+    grid-template-columns: 1fr;
+    width: 95%;
+    gap: 15px;
+  }
+
+  .menu h1 {
+    font-size: 1.2rem;
+  }
+
+  .menu .container-menu .card-menu img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .menu .container-menu .card-menu .container-text p {
+    font-size: 0.85rem;
+  }
+}
