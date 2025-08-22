@@ -2,7 +2,6 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 html {
@@ -14,6 +13,12 @@ html {
   --primary-font-color: #1d352d;
   --secondry-bg-color: #1a926a;
   --third-bg-color: #f1f8f1;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {

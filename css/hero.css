@@ -168,6 +168,10 @@
     flex-direction: column;
   }
 
+  .container .hero .content1 .serve .serve-content {
+    height: auto;
+  }
+
   .container .hero .property {
     display: block;
   }
