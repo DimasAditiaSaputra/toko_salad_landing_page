@@ -1,6 +1,6 @@
 function elementMenuCard(img, title, desc, price, aosAttr) {
   const card = `
-    <div class="card-menu" data-aos="${aosAttr}" data-aos-duration="1000">>
+    <div class="card-menu" data-aos="${aosAttr}" data-aos-duration="1000">
         <img src="${img}" alt="${title}" />
         <div class="container-text">
           <h2>${title}</h2>
