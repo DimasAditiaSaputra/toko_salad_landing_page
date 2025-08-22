@@ -45,25 +45,67 @@
 .menu .container-menu .card-menu img:hover {
   transform: translateY(-20px);
 }
+.menu .container-menu .card-menu .container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* biar mulai dari atas */
+  align-items: flex-start; /* teks rata kiri */
+  gap: 8px; /* kasih jarak antar elemen */
+  flex: 1; /* biar ikut memenuhi sisa ruang card */
+}
 
 .menu .container-menu .card-menu .container-text h2 {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--primary-font-color);
+  margin: 0;
 }
 
 .menu .container-menu .card-menu .container-text p {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--primary-font-color);
+  margin: 0;
 }
 
 .menu .container-menu .card-menu .container-text .container-btn {
+  margin-top: auto; /* tombol selalu turun ke bawah */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
 .menu .container-menu .card-menu .container-text .container-btn .order-item {
   background-color: var(--primary-bg-color);
   color: var(--primary-font-color);
   font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu
+  .container-menu
+  .card-menu
+  .container-text
+  .container-btn
+  .order-item:hover {
+  background-color: var(--secondry-bg-color);
+  color: var(--primary-bg-color);
+}
+
+.menu .container-menu .card-menu .container-text .container-btn .price {
+  border-radius: 5px;
+  min-width: 60px;
+  text-align: center;
+  padding: 0.3rem 0.6rem;
+  background-color: var(--secondry-bg-color);
+  color: var(--primary-bg-color);
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .menu
@@ -75,13 +117,13 @@
   background-color: var(--secondry-bg-color);
 }
 
-.menu .container-menu .card-menu .container-text .container-btn .price {
+/* .menu .container-menu .card-menu .container-text .container-btn .price {
   border-radius: 0px;
   width: 50px;
   background-color: var(--secondry-bg-color);
   color: var(--primary-bg-color);
   font-size: 0.9rem;
-}
+} */
 
 /* loading */
 .loading {
@@ -104,23 +146,59 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .menu .container-menu {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* 1 kolom aja */
     width: 95%;
     gap: 15px;
   }
 
   .menu h1 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .menu .container-menu .card-menu {
+    flex-direction: column; /* gambar di atas, teks di bawah */
+    text-align: center;
+    padding: 1rem;
   }
 
   .menu .container-menu .card-menu img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .menu .container-menu .card-menu .container-text {
+    align-items: center; /* teks rata tengah */
+    gap: 6px;
+  }
+
+  .menu .container-menu .card-menu .container-text h2 {
+    font-size: 1.1rem;
   }
 
   .menu .container-menu .card-menu .container-text p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .menu .container-menu .card-menu .container-text .container-btn {
+    justify-content: center; /* tombol & harga di tengah */
+    gap: 15px;
+    width: 100%;
+  }
+
+  .menu .container-menu .card-menu .container-text .container-btn .order-item {
     font-size: 0.85rem;
+    padding: 0.4rem 0.9rem;
+  }
+
+  .menu .container-menu .card-menu .container-text .container-btn .price {
+    font-size: 0.85rem;
+    min-width: 55px;
+    padding: 0.3rem 0.6rem;
   }
 }

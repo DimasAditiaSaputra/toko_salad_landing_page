@@ -1,17 +1,17 @@
 .about {
   width: 100%;
-  height: 100dvh;
+  min-height: 100dvh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
   gap: 20px;
   padding: 1rem;
-  overflow: hidden;
 }
 
 .about .content-about1,
 .about .content-about2 {
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -33,8 +33,8 @@
 /* Custom Classes for Layout */
 .full-screen-container {
   display: flex;
-  min-height: 500px;
-  min-width: 500px;
+  min-height: 400px;
+  min-width: 400px;
   align-items: center;
   justify-content: center;
 }
@@ -98,11 +98,48 @@
   align-items: center;
 }
 
-@media (max-width: 1024px) {
+/* Responsive */
+@media (max-width: 768px) {
   .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 0.5rem;
+    gap: 10px;
+  }
+
+  .about .content-about1 {
+    order: 1;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .about .content-about2 {
+    order: 2;
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .about .content-about2 h1 {
+    font-size: 1.3rem;
+  }
+
+  .about .content-about2 h3 {
+    font-size: 0.9rem;
   }
 }
+
+/* @media (max-width: 768px) {
+  .about {
+    padding: 0.5rem;
+    gap: 10px;
+  }
+
+  .about .content-about2 h1 {
+    font-size: 1.3rem;
+  }
+
+  .about .content-about2 h3 {
+    font-size: 0.9rem;
+  }
+} */
